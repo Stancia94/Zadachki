@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "node --experimental-strip-types stages.ts "
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
