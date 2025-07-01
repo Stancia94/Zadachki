@@ -19,5 +19,5 @@ function countFloor(stage: number, size: size): number {
   }
   return counter;
 }
-
-console.log(countFloor(10, "large"));
+let stage = 10;
+console.log(countFloor(stage, "large"));
