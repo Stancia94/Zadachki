@@ -1,21 +1,50 @@
 #game {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 22px;
+  font-weight: 700;
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   width: fit-content;
   height: fit-content;
+  background-color: rgb(83, 123, 255);
+  border-radius: 16px;
+}
+
+.container {
+  display: flex;
+  column-gap: 20px;
+  width: fit-content;
   margin: auto auto;
 }
 
-.ceil {
-  height: 100%;
-  width: 100%;
-  background-color: aqua;
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#randomize {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: blue;
   color: white;
+  border: none;
+  border-radius: 8px;
+
+}
+
+#randomize:active {
+  background-color: grey;
+}
+
+.ceil {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 234, 0);
+  color: rgb(252, 61, 61);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  margin: 10px;
+  border-radius: 16px;
 }
