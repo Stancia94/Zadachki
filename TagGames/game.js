@@ -96,6 +96,7 @@ class TagGame {
     if (!this.isPossibleMove(indexMovedCeil, indexEmptyCeil, direction)) return;
     [this.ceils[indexEmptyCeil], this.ceils[indexMovedCeil]] = [this.ceils[indexMovedCeil], this.ceils[indexEmptyCeil]]
     this.render()
+    this.isWin()
   }
   initControl() {
     document.addEventListener('keypress', ({ code }) => {
@@ -121,6 +122,7 @@ class TagGame {
     for (let i = 0; i < this.ceils.length; i++) {
       if (this.ceils[i] !== i) return false;
     }
+    console.log('win')
     return true;
   }
 }
